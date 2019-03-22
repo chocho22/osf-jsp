@@ -12,4 +12,25 @@
     <servlet-name>PBoardServlet</servlet-name>
     <url-pattern>/pboard/*</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>PBoardServlet2</servlet-name>
+    <servlet-class>com.osf.test.servlet.PBoardServlet2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PBoardServlet2</servlet-name>
+    <url-pattern>/pboard2/*</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  <servlet-name>TestServlet</servlet-name>
+  <servlet-class>com.osf.test.servlet.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/test/*</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>FoodServlet</servlet-name>
+  	<url-pattern>/food/*</url-pattern>
+  </servlet-mapping>
 </web-app>
