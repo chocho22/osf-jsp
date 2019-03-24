@@ -12,7 +12,8 @@ public class ReadFile {
 	private static final String PASSWORD;
 	private static final String CLASSNAME;
 	static {
-		InputStream is = ReadFile.class.getResourceAsStream("/com/osf/test/config/db.properties");
+		InputStream is = ReadFile.class.getResourceAsStream
+				("/com/osf/test/config/db.properties");
 		Properties prop = new Properties();
 		try {
 			prop.load(is);
