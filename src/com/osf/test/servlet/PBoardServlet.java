@@ -23,7 +23,7 @@ import com.osf.test.service.impl.PBoardServiceImpl;
 public class PBoardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	private static String savePath = "D:\\study\\workspace\\osf-jsp\\WebContent\\upload";
+	private static String savePath = "C:\\Users\\user-1\\git\\osf-jsp\\WebContent\\upload";
 	private PBoardService pbs = new PBoardServiceImpl();
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -86,7 +86,7 @@ public class PBoardServlet extends HttpServlet {
 					rd.forward(request, response);
 					return;
 				} else {
-
+					
 				}
 			} catch (FileUploadException e) {
 				e.printStackTrace();

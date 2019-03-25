@@ -61,9 +61,4 @@ public class DBCon {
 		}
 		con = null;
 	}
-
-	public static void main(String[] args) {
-		getCon();
-		close();
-	}
 }
