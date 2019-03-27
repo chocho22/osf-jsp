@@ -15,6 +15,7 @@ import com.osf.test.service.TransService;
 
 public class TransServiceImpl implements TransService {
 	private Gson gson = new Gson();
+
 	@Override
 	public Map<String, String> transferText(String source, String target, String text) {
 		Map<String, String> rMap = new HashMap<>();
@@ -45,12 +46,12 @@ public class TransServiceImpl implements TransService {
 				response.append(inputLine);
 			}
 			br.close();
-			if(responseCode==200) {
-				Map<String,Map<String,Map<String,String>>> cMap = gson.fromJson(response.toString(), Map.class);
+			if (responseCode == 200) {
+				Map<String, Map<String, Map<String, String>>> cMap = gson.fromJson(response.toString(), Map.class);
 				rMap.put("msg", cMap.get("message").get("result").get("translatedText"));
 				rMap.put("isError", "false");
 			} else {
-				Map<String,String> errorMap = gson.fromJson(response.toString(), Map.class);
+				Map<String, String> errorMap = gson.fromJson(response.toString(), Map.class);
 				rMap.put("msg", errorMap.get("errorMessage"));
 			}
 		} catch (Exception e) {
