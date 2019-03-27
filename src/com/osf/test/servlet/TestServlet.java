@@ -29,7 +29,7 @@ public class TestServlet extends HttpServlet {
 			HttpServletResponse response) throws 
 	ServletException, IOException {
 		String uri = request.getRequestURI();
-		if("/test/c".equals(uri)) {
+		if("/test/a".equals(uri)) {
 			request.setAttribute("test", getTestList());
 		}
 		RequestDispatcher rd = request.getRequestDispatcher
