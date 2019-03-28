@@ -13,10 +13,7 @@ Map<String,String> tMap = new HashMap<>();
 tMap.put("t_num","1");
 tMap.put("t_name","시리");
 request.setAttribute("tMap",tMap);
-RequestDispatcher rd = 
-request.getRequestDispatcher("/views/photo-board2/app.jsp");
-rd.forward(request,response);
-pageContext.setAttribute("tMap",tMap);
+//pageContext.setAttribute("tMap",tMap);
 PhotoBoardVO pb = new PhotoBoardVO();
 pb.setPbTitle("제목");
 pageContext.setAttribute("pb",pb);
@@ -33,6 +30,7 @@ ${sessionScope.str}<br>
 ${requestScope.str}<br>
 ${pageScope.str}<br>
 ${tMap.t_name}<br>
+${tMap}
 <%=tMap.get("t_name") %><br>
 ${pb.pbTitle}<br>
 </body>
