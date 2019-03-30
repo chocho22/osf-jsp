@@ -36,7 +36,9 @@ public class CommonCodeDAOImpl implements CommonCodeDAO {
 	}
 	
 	public static void main(String[] args) {
-//		CommonCodeDAO ccdao = new CommonCodeDAOImpl();
-//		System.out.println(ccdao.selectCommonCodeList("trans"));
+		CommonCodeDAO ccdao = new CommonCodeDAOImpl();
+		ccdao.selectCommonCodeList("trans");
+		
+		System.out.println(ccdao.selectCommonCodeList("trans"));
 	}
 }
