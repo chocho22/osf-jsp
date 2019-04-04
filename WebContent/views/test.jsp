@@ -17,6 +17,7 @@ request.setAttribute("tMap",tMap);
 PhotoBoardVO pb = new PhotoBoardVO();
 pb.setPbTitle("제목");
 pageContext.setAttribute("pb",pb);
+
 %>
 <!DOCTYPE html>
 <html>
